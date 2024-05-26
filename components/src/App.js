@@ -3,7 +3,7 @@ import MyComponent from "./Component/MyComponent";
 export default function App() {
   return (
     <>
-      <MyComponent/>
+      <MyComponent message="hello worlds"/>
     </>
   )
 }

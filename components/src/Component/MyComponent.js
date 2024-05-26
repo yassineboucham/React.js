@@ -1,7 +1,7 @@
-export default function MyComponent() {
+export default function MyComponent({message}) {
     return (
-        <div>
-        <h1>Hello, this is my component!</h1>
+      <div>
+        <h1>{message}</h1>
         <p>Welcome to my React application.</p>
       </div>
     );
