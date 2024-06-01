@@ -2,6 +2,7 @@ import React from "react";
 import MyComponent from "./Component/MyComponent";
 import Form from "./Component/props_children";
 import Fruit from "./Component/Fruts";
+import Counter from "./Component/State";
 
 export default function App() {
   const arr = ['Bana', 'Limon', 'avocado']
@@ -18,6 +19,8 @@ export default function App() {
       </Form>
       {/* JSX & .map */}
       <Fruit fruit={arr}/>
+      {/* state & Events*/}
+      <Counter/>
     </>
   );
 }
