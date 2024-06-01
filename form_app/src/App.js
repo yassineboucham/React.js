@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Submit from "./button/Submit";
+import DateInput from "./forms/Date_input";
+import TextFrom from "./forms/Text_form";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <form id="form">
+        <TextFrom for="fname" label="First Naim: " type="text"/>
+        <TextFrom for="lname" label="Last Naim: " type="text"/>
+        <DateInput for="birthday" label="Birthday: "/>
+        <TextFrom for="number" label="Phone Number: "  type="tel" pattern="[0-9]{10}"/>
+        <Submit forrm="form"/>
+      </form>
+    </>
+  )
 }
-
-export default App;
